@@ -1,8 +1,8 @@
 {
   "expo": {
     "jsEngine": "hermes",
-    "name": "noyz.fun",
-    "slug": "noyz.fun",
+    "name": "first-mobile-dapp",
+    "slug": "first-mobile-dapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -17,14 +17,14 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.dpu.noizfun"
+      "bundleIdentifier": "com.dpu.firstmobiledapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.dpu.noizfun",
+      "package": "com.dpu.firstmobiledapp",
       "permissions": [
         "android.permission.RECORD_AUDIO",
         "android.permission.MODIFY_AUDIO_SETTINGS"
@@ -45,7 +45,7 @@
     ],
     "extra": {
       "eas": {
-        "projectId": "92ff7efd-c806-4e0a-b1b1-b3aac303974a"
+        "projectId": "aa79d125-c2c4-4761-ab7d-a13a2ac62c6d"
       }
     }
   }
