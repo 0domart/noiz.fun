@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, Animated } from 'react-native';
+import { View, Text, StyleSheet, Animated, TouchableOpacity } from 'react-native';
 import { collection, query, where, onSnapshot, orderBy } from 'firebase/firestore';
 import { db } from '../utils/firebase';
 import { useAuthorization } from '../utils/useAuthorization';
+import { LeaderboardModal } from './LeaderboardModal';
 
 export const UserPointsBadge = () => {
   const { selectedAccount } = useAuthorization();
   const [points, setPoints] = useState<number>(0);
   const [loading, setLoading] = useState<boolean>(false);
+  const [showLeaderboard, setShowLeaderboard] = useState<boolean>(false);
   
   // Floating animation for subtle movement
   const floatAnim = useState(new Animated.Value(0))[0];
@@ -88,31 +90,46 @@ export const UserPointsBadge = () => {
   if (!selectedAccount) return null;
 
   return (
-    <Animated.View
-      style={[
-        styles.container,
-        {
-          transform: [{ translateY: floatValue }],
-        },
-      ]}
-    >
-      <Text style={styles.text}>
-        {loading ? '...' : `${points} pts`}
-      </Text>
-    </Animated.View>
+    <>
+      <TouchableOpacity 
+        onPress={() => setShowLeaderboard(true)}
+        activeOpacity={0.8}
+        style={styles.touchableContainer}
+      >
+        <Animated.View
+          style={[
+            styles.container,
+            {
+              transform: [{ translateY: floatValue }],
+            },
+          ]}
+        >
+          <Text style={styles.text}>
+            {loading ? '...' : `${points} pts`}
+          </Text>
+        </Animated.View>
+      </TouchableOpacity>
+
+      <LeaderboardModal 
+        visible={showLeaderboard}
+        onClose={() => setShowLeaderboard(false)}
+      />
+    </>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
+  touchableContainer: {
     position: 'absolute',
     top: 16,
     right: 16,
+    zIndex: 5, // Lower zIndex so it scrolls with content
+  },
+  container: {
     backgroundColor: '#D74A35',
     paddingVertical: 8, // Slightly more padding for square shape
     paddingHorizontal: 12,
     borderRadius: 12, // Square with rounded corners like nav buttons
-    zIndex: 5, // Lower zIndex so it scrolls with content
     elevation: 12, // Enhanced Android shadow
     shadowColor: '#000', // iOS shadow
     shadowOffset: { width: 0, height: 4 }, // Deeper shadow
