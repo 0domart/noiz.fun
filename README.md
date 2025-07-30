@@ -8,14 +8,9 @@ Built for the [Solana Mobile Hackathon](https://solanamobile.com/hackathon), pow
 
 > Built with ❤️ by [@0domart](https://x.com/0domart) and [@ferno_ag](https://x.com/ferno_ag)
 
-> 🎥 [Pitch Deck](https://www.canva.com/design/DAGtnUAJWxI/mOrMThJc-c7srRi1j2Ky6Q/edit?utm_content=DAGtnUAJWxI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)  
+> 🎥 **[Pitch Deck](https://www.canva.com/design/DAGtnUAJWxI/mOrMThJc-c7srRi1j2Ky6Q/edit?utm_content=DAGtnUAJWxI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)**
 
-<div align="left">
-  <iframe src="https://player.vimeo.com/video/1105789094?autoplay=0&muted=0"
-          width="100%" height="450" frameborder="0"
-          allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
-  </iframe>
-</div>
+> 🎬 **[Product Demo Video](https://vimeo.com/1105789094)**  
 
 
 ### 🏠 Home
