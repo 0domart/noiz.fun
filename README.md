@@ -56,6 +56,36 @@ Built for the [Solana Mobile Hackathon](https://solanamobile.com/hackathon), pow
 
 ---
 
+## 🚀 How to Run
+
+### 📱 Mobile App
+
+- **Build Android APK**:  
+  ```bash
+  npx eas build --profile development --platform android
+  ```
+  ➜ Scan the QR code to install the APK on your phone
+
+- **Run in Expo (development)**:  
+  ```bash
+  npx expo start -c
+  ```
+  ➜ Install the **Expo Go** app on your device  
+  ➜ Scan the QR code to preview the app  
+  ➜ Press `r` in the terminal to refresh manually  
+
+---
+
+### ⛓ Smart Contract (Anchor)
+
+```bash
+cd program
+anchor build
+anchor deploy
+```
+
+---
+
 ## ⚙️ Tech Stack
 
 - **Expo + React Native** (mobile app)
