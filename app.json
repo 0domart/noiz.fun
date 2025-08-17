@@ -1,11 +1,11 @@
 {
   "expo": {
     "jsEngine": "hermes",
-    "name": "first-mobile-dapp",
-    "slug": "first-mobile-dapp",
+    "name": "Noiz.fun",
+    "slug": "noizfun",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/button_create.png",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/splash.png",
@@ -17,18 +17,20 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.dpu.firstmobiledapp"
+      "bundleIdentifier": "com.dpu.noizfun",
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "package": "com.dpu.firstmobiledapp",
+      "package": "com.dpu.noizfun",
       "permissions": [
         "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.RECORD_AUDIO",
         "android.permission.MODIFY_AUDIO_SETTINGS"
-      ]
+      ],
+      "runtimeVersion": "1.0.0"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -45,8 +47,11 @@
     ],
     "extra": {
       "eas": {
-        "projectId": "d54f75c5-5c25-48b2-b05b-2ec03aca9f0c"
+        "projectId": "112d198f-c344-4e4e-bdfc-962fd8fe216c"
       }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/112d198f-c344-4e4e-bdfc-962fd8fe216c"
     }
   }
 }

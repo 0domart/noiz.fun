@@ -1,4 +1,4 @@
-package com.dpu.firstmobiledapp
+package com.dpu.noizfun
 
 import android.os.Build
 import android.os.Bundle

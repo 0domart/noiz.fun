@@ -1,4 +1,4 @@
-package com.dpu.firstmobiledapp
+package com.dpu.noizfun
 
 import android.app.Application
 import android.content.res.Configuration

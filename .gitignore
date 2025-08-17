@@ -3,6 +3,9 @@
 # dependencies
 node_modules/
 
+dapp-store-signing-keys
+dapp-store-signing-keys/
+
 # Expo
 .expo/
 dist/

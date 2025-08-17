@@ -21,7 +21,7 @@ extensions.configure(com.facebook.react.ReactSettingsExtension) { ex ->
   }
 }
 
-rootProject.name = 'first-mobile-dapp'
+rootProject.name = 'Noiz.fun'
 
 dependencyResolutionManagement {
   versionCatalogs {

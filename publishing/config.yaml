@@ -1,0 +1,48 @@
+publisher:
+  name: Noiz.fun
+  address: AySJdZrwvjHvm8fzhJ6yxykeYMV45Ngp2ECMKWGJJVq6
+  website: https://ferno.ag
+  email: julien.odo@codigo.ai
+  media:
+    - purpose: icon
+      uri: ./media/noiz_logo.png
+app:
+  name: Noiz.fun
+  address: E4ob9PZ2f4DxR5cshUACohjAUYB6tFwmgtf99HA38b3v
+  android_package: com.dpu.noizfun
+  urls:
+    license_url: https://ferno.ag
+    copyright_url: https://ferno.ag
+    privacy_policy_url: https://ferno.ag
+    website: https://ferno.ag
+  media:
+    - purpose: icon
+      uri: ./media/noiz_logo.png
+    - purpose: banner
+      uri: ./media/banner.png
+release:
+  address: AySJdZrwvjHvm8fzhJ6yxykeYMV45Ngp2ECMKWGJJVq6
+  media:
+    - purpose: icon
+      uri: ./media/noiz_logo.png
+    - purpose: banner
+      uri: ./media/banner.png
+    - purpose: screenshot
+      uri: ./media/img1.png
+    - purpose: screenshot
+      uri: ./media/img2.png
+    - purpose: screenshot
+      uri: ./media/img3.png
+    - purpose: screenshot
+      uri: ./media/img4.png
+  files:
+    - purpose: install
+      uri: ./files/app-release.apk
+  catalog:
+    en-US:
+      name: Noiz.fun
+      short_description: Time to bring the noise.
+      long_description: Create, remix, and share audio clips with a tap. Each sound becomes a clickable button, sharedacross the community
+      new_in_version: New release.
+solana_mobile_dapp_publisher_portal:
+  google_store_package: com.dpu.noizfun
